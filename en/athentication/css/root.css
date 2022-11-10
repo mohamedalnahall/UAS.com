@@ -1,0 +1,16 @@
+:root {
+    --black : black;
+    --dark : #1d1d1f;
+    --light-dark : rgb(87, 87, 87);
+    --lighter-dark : #86868b;
+    --gray : rgb(240, 240, 240);
+    --blue : #0071e3;
+    --dark-blue :#006ad4;
+    --darker-blue : #0057ae;
+    --light : rgb(210, 210, 215);
+    --white : white;
+    --background : #f1f4f6;
+    --shadow : rgba(125, 125, 150, 0.15);
+    --light-shadow : rgb(125 125 150 / 2%);
+    --input-shadow : rgb(0 125 250 / 60%);
+}

@@ -1,0 +1,402 @@
+body[data-theme="light"] {
+    --black : black;
+    --dark : #1d1e1f;
+    --light-dark : #5f6368;
+    --lighter-dark : #8d9094;
+    --hover : #f2f5f8;
+    --gray : #aaacb3;
+    --over-blue : #289cfc;
+    --blue : #0088f7;
+    --blue2 : #4faffc;
+    --tb-blue : #e5f3ff;
+    --over-dark-blue : #1089ec;
+    --dark-blue :#007be0;
+    --darker-blue : #0075d4;
+    --light-blue : #72b1ef;
+    --light : #cfd2d9;
+    --white : white;
+    --top-white : white;
+    --background : #f1f4f6;
+    --shadow : rgba(125, 125, 150, 0.2);
+    --light-shadow : rgb(125 125 150 / 6%);
+    --input-shadow : rgb(0 125 250 / 60%);
+    --no-color : rgba(0, 0, 0, 0);
+    --dark-over: rgba(248, 251, 255, 0.75);
+    --trans-1 : 150ms;
+    --trans-2 : 200ms;
+    --trans-3 : 300ms;
+}
+
+body[data-theme="dark"] {
+    --black : rgb(245, 242, 255);
+    --dark : #e0e0e7;
+    --light-dark : #c2c2c7;
+    --lighter-dark : #a2a2a7;
+    --hover : #1f2324;
+    --gray : #343b3c;
+    --blue : #2b87d3;
+    --over-blue : #289cfc;
+    --blue : #0088f7;
+    --blue2 : #4faffc;
+    --tb-blue : #1a252e;
+    --over-dark-blue : #1089ec;
+    --dark-blue :#007be0;
+    --darker-blue : #0075d4;
+    --light-blue : #72b1ef;
+    /* --blue : #26c6da;
+    --dark-blue :#23b2c5;
+    --darker-blue : #20a5b7;
+    --light-blue : #8ce1eb;*/
+    --light : #3c424c;
+    --white : #181a1b;
+    --top-white : black;
+    --background : #1e2122;
+    --shadow : rgba(0, 0, 0, 0.5);
+    --light-shadow : rgba(0, 0, 0, 0.06);
+    --input-shadow : rgb(0 125 250 / 60%);
+    --no-color : rgba(0, 0, 0, 0);
+    --dark-over: rgba(0, 5, 12, 0.65);
+    --trans-1 : 150ms;
+    --trans-2 : 200ms;
+    --trans-3 : 300ms;
+}
+
+* {
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+    color: var(--light-dark); 
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--white);
+    margin: 0 2px;
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background-color: var(--gray);
+}
+
+
+
+body {
+    background-color:var(--background);
+}
+
+hr{
+    border-color: var(--light); 
+    border-top: 1px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color:var(--dark);
+}
+
+h1{
+    margin: 1.3125rem 0;
+}
+
+h2{
+    margin: 1.245rem 0;
+}
+
+h3 {
+    margin: 1rem 0;
+}
+
+li{
+    list-style: none;
+}
+
+input{
+    background-color: var(--white);
+    color: var(--dark);
+    border: 0.0625rem solid var(--light);
+    padding: 1rem;
+    font-size: 1rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 0.625rem;
+    box-shadow: none;
+    transition: box-shadow var(--trans-1) ease;
+}
+
+input[type=text]:focus,input[type=password]:focus,input[type=search]:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 0.25rem var(--input-shadow);
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: var(--blue);
+    color: var(--white);
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--dark-blue);
+}
+
+input[type=submit]:focus {
+    background-color: var(--darker-blue);
+}
+
+input::placeholder{
+    opacity: 1;
+    color: var(--lighter-dark);
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+kbd {
+    color: var(--blue);
+    padding: 0rem 0.4rem;
+    border: 0.125rem solid var(--blue);
+    border-radius: 0.3rem;
+    font-size: 0.75rem;
+}
+
+linkArrow {
+    display: inline-block;
+    position: relative;
+    width: 0.75em;
+    height: 0.75em;
+    border-top: 0.1em solid var(--dark);
+    border-left: 0.1em solid var(--dark);
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+linkArrow::before {
+    content: '';
+    display: inline-block;
+    background-color: var(--dark);
+    position: absolute;
+    top: -0.05em;
+    left: -0.1em;
+    width: 0.1em;
+    height: 1em;
+    transform-origin: top center;
+    transform: rotate(-45deg);
+}
+
+::selection {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+}
+
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    /*-webkit-transition: var(--trans-1);*/
+    transition: var(--trans-1);
+    border-radius: 999rem;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 75%;
+    width: 37.5%;
+    left: 6.25%;
+    bottom: 12.5%;
+    background-color: white;
+    /*-webkit-transition: .4s;*/
+    transition: var(--trans-1);
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--blue);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 0.0625rem var(--blue);
+}
+
+input:checked + .slider:before {
+    /*-webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);*/
+    transform: translateX(133.3333%);
+}
+
+
+.e0 {
+    opacity: 0.1;
+    fill: var(--blue);
+}
+.e1 {
+    fill: var(--blue);
+}
+.e2 {
+    fill: var(--light-blue);
+}
+
+
+arrow {
+    display: block;
+    height: 0.65em;
+    width: 0.65em;
+    border-bottom: 0.125rem solid var(--white);
+    border-right: 0.125rem solid var(--white);
+    transform-origin: center;
+    transform: rotate(45deg);  
+}
+
+
+socialBox {
+    display: grid;
+    grid-template-columns: repeat(4,2rem);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+socialBox > * {
+    border: 0.0625rem solid;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.25rem;
+    border-radius: 0.390625rem;
+    transition: var(--trans-1) ease;
+    cursor: pointer;
+}
+
+socialBox > *:hover svg path {
+    fill: var(--white);
+}
+
+socialBox fb {
+    border-color:#1876f2;
+}
+socialBox fb:hover {
+    background-color: #1876f2;
+}
+
+socialBox ig {
+    border-color:#fe0682;
+}
+socialBox ig:hover {
+    background-color: #fe0682;
+}
+
+socialBox yt {
+    border-color:#ff0000;
+}
+socialBox yt:hover {
+    background-color: #ff0000;
+}
+
+socialBox tw {
+    border-color:#1c9cea;
+}
+socialBox tw:hover {
+    background-color: #1c9cea;
+}
+
+socialBox tel {
+    border-color:#2f9ddf;
+}
+socialBox tel:hover {
+    background-color: #2f9ddf;
+}
+
+socialBox wa {
+    border-color:#23c862;
+}
+socialBox wa:hover {
+    background-color: #23c862;
+}
+
+socialBox fl {
+    border-color:#005ed5;
+}
+socialBox fl:hover {
+    background-color: #005ed5;
+}
+
+socialBox sc {
+    border-color:#f26100;
+}
+socialBox sc:hover {
+    background-color: #f26100;
+}
+
+.container {
+    max-width: 73rem;
+    width: 73rem;
+    margin: auto;
+    padding:0 1rem;
+}
+
+@media (max-width: 100rem){
+    .container {
+        width: 69rem;
+        max-width: 69rem;
+    }
+}
+
+@media (max-width: 75rem){
+    .container {
+        width: 56.5rem;
+        max-width: 56.5rem;
+    }
+}
+
+@media (max-width: 60rem){
+    .container {
+        max-width: 49rem;
+        width: unset;
+    }
+}
+
+@media (max-width: 53rem){    
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 32rem){    
+    .container {
+        padding: 0 1rem;
+    }
+}

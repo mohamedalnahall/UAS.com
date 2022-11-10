@@ -1,0 +1,110 @@
+.no-select {
+    user-select: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inlint-block{
+    display: inline-block;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.rel {
+    position: relative;
+}
+
+.abs{
+    position: absolute;
+}
+
+.bg-white{
+    background-color: var(--white);
+}
+
+.bg-lighter-dark{
+    background-color: var(--lighter-dark);
+}
+
+.bg-dark{
+    background-color: var(--dark);
+}
+
+.bg-hover{
+    background-color: var(--hover);
+}
+
+.c-white {
+    color: var(--white);
+}
+.c-blue {
+    color: var(--blue);
+}
+.c-dark {
+    color: var(--dark);
+}
+.c-light-dark {
+    color: var(--light-dark);
+}
+
+
+.full-width {
+    width: 100%;
+}
+
+.full-height{
+    height: 100%;
+}
+
+.hide-overflow{
+    overflow: hidden;
+}
+
+.hide-overflow-inx{
+    overflow-x: hidden;
+}
+
+.hide-overflow-iny{
+    overflow-y: hidden;
+}
+
+.trans-1 {
+    transition: var(--trans-1) ease;
+}
+
+.trans-2 {
+    transition: var(--trans-2) ease;
+}
+
+.trans-3 {
+    transition: var(--trans-3) ease;
+}
+
+.gradient-text {
+    color: transparent;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(90deg, var(--blue),#6DBD54);
+    
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}

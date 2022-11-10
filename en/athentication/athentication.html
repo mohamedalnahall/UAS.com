@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard</title>
+		<link id="theme" rel="stylesheet" href="css/root.css" />
+		<link rel="stylesheet" href="css/master.css" />
+		<link rel="stylesheet" href="css/header_1_only.css" />
+		<link rel="stylesheet" href="css/framework.css" />
+		<link rel="stylesheet" href="css/athentication.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="header-1">
+			<a>
+				<img id="logo" src="imgs/logo.png" alt="logo" />
+			</a>
+			<ul>
+				<li>
+					<a
+						class="lang"
+						href="../../ar/athentication/athentication.html"
+						>عربي</a
+					>
+				</li>
+				<li>
+					<svg
+						id="theme_changer"
+						style="
+							background-color: var(--white);
+							padding: 0.5rem;
+							cursor: pointer;
+							width: 3em;
+							height: 3rem;
+							margin: 0;
+							vertical-align: middle;
+							fill: var(--lighter-dark);
+							overflow: hidden;
+							border: 0.0625rem solid var(--light);
+							border-radius: 0.625rem;
+						"
+						viewBox="0 0 1024 1024"
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M512 832c-179.2 0-320-140.8-320-320s140.8-320 320-320 320 140.8 320 320S691.2 832 512 832M512 896c211.2 0 384-172.8 384-384s-172.8-384-384-384S128 300.8 128 512 300.8 896 512 896L512 896zM800 512c0-160-128-288-288-288l0 576C672 800 800 672 800 512z"
+						/>
+					</svg>
+				</li>
+				<li class="search-field">
+					<input type="text" placeholder="search" />
+					<svg
+						fill="var(--lighter-dark)"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 30 30"
+						width="30px"
+						height="30px"
+					>
+						<path
+							d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+						/>
+					</svg>
+				</li>
+				<li class="profile">
+					<img src="imgs/profile.jpg" alt="" srcset="" />
+				</li>
+			</ul>
+		</div>
+		<div class="athentication-grid middle">
+			<div class="bg-white p-20 xx-rad x-shadow">
+				<h1>Authentication.</h1>
+				<form action="">
+					<div>
+						<div style="position: relative">
+							<input
+								class="full-width"
+								type="text"
+								name="id"
+								maxlength="9"
+							/>
+							<span class="lbl trans-100">User ID</span>
+						</div>
+						<div style="position: relative">
+							<input
+								class="full-width"
+								type="password"
+								name="pass"
+								maxlength="20"
+							/>
+							<span class="lbl trans-100">Password</span>
+						</div>
+						<p>pleas don't share this query with anyone.</p>
+					</div>
+					<div>
+						<input class="full-width" type="submit" />
+						<a href="">Forgot Your User ID or password?</a>
+						<br />
+						<a href=""
+							>Don't have a User ID? Activate your account.</a
+						>
+					</div>
+				</form>
+			</div>
+			<div class="bg-white p-20 xx-rad x-shadow">
+				<h2>Important Notes.</h2>
+				<ul>
+					<li class="hover-gray p-16 mtd-6 xx-rad trans-50">
+						For Students, User ID is your University ID
+					</li>
+					<hr class="mlr-16" />
+					<li class="hover-gray p-16 mtd-6 xx-rad trans-50">
+						For Graduates, Password is your nationality ID
+					</li>
+					<hr class="mlr-16" />
+					<li class="hover-gray p-16 mtd-6 xx-rad trans-50">
+						Make sure to enter your User ID and your Password
+						correctly
+					</li>
+					<hr class="mlr-16" />
+					<li class="hover-gray p-16 mtd-6 xx-rad trans-50">
+						Make attention to the caps key
+					</li>
+				</ul>
+				<a>Stay in touch, follow us on facebook</a>
+			</div>
+		</div>
+		<div style="height: 100rem"></div>
+		<script src="main.js"></script>
+	</body>
+</html>

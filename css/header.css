@@ -1,0 +1,772 @@
+topTask {
+    display: block;
+    position: fixed;
+    background-image: url("../imgs/topTaskPattern.svg");
+    background-size: 3rem;
+    background-position-y: 1.4rem;
+    background-color: var(--dark-blue);
+    text-shadow: 0.02rem 0 0 var(--white);
+    height: 2.85rem;
+    width: 100%;
+    top: -2.35rem;
+    left: 0;
+    z-index: 1002;
+    user-select: none;
+    transition: top var(--trans-2) ease;
+}
+
+topTask > .container {
+    position: relative;
+}
+
+topTask > .container > div:last-child {
+    background-image: url("../imgs/topTaskPattern.svg");
+    background-size: 3rem;
+    background-position-y: 0.08rem;
+    background-position-x: 0.2rem;
+    background-color: var(--dark-blue);
+    position: absolute;
+    top: 2.85rem;
+    left: 1rem;
+    border-bottom-left-radius: 999rem;
+    border-bottom-right-radius: 999rem;
+    height: 2rem;
+    width: 3.199375rem;
+    cursor: pointer;
+    z-index: -1;
+    transition: top var(--trans-2) ease;
+}
+
+topTask > .container > div:last-child > arrow {
+    height: 0.85em;
+    width: 0.85em;
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%) rotate(45deg); 
+    animation: updown 750ms ease infinite;  
+}
+
+@keyframes updown {
+    0% {
+        top: 30%;
+    }
+    50% {
+        top: 40%;
+    }
+    100% {
+        top: 30%;
+    }
+}
+
+topTask:hover > .container > div:last-child {
+    top: 0.5rem;
+}
+
+topTask > .container > div:nth-child(2) > theme_changer{
+    padding: 0.925rem 1.1rem;
+    height: 2rem;
+    transition: height 50ms ease;
+}
+
+topTask > .container > div > div:hover {
+    background-color: var(--white);
+}
+
+topTask > .container > div > div:hover > span {
+    color: var(--blue);
+}
+
+topTask > .container > div > div:hover > a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+topTask .slist {
+    background-color: var(--white);
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    width: 12rem;
+    padding-top: 0.5rem;
+    transition: height;
+    transition-duration: var(--trans-2);
+    transition-timing-function: ease;
+    z-index: 1001;
+}
+
+.slist > a {
+    height: 3rem;
+    text-decoration: none;
+}
+
+.slist > a > svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: -2.5rem;
+    margin-left: 1rem;
+    transition: var(--trans-2) ease;
+}
+
+.slist > a .ibg {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.390625rem;
+    transition: all var(--trans-2) ease;
+}
+
+.slist > a:hover .ibg {
+    width: 100%;
+}
+
+topTask .slist > a svg {
+    margin-left: 0.5rem;
+}
+
+.slist > a:hover svg {
+    margin-right: -96.3%;
+}
+
+.slist > a:hover span {
+    color : var(--blue);
+    transition: var(--trans-2) ease;
+}
+
+.slist > a .e0 {
+    border: 0.0625rem solid var(--blue);
+    opacity: 0.5;
+}
+
+.slist > a:hover .e0 {
+    opacity: 1;
+}
+
+header {
+    background-color : var(--white);
+    position: fixed;
+    width: 100%;
+    top: 0.5rem;
+    box-shadow:  0 0 0.5rem 0.1rem var(--light-shadow);
+    z-index: 1000;
+    height: 7.5625rem;
+    transition-property: height, top;
+    transition-duration: var(--trans-2);
+    transition-timing-function: ease;
+    overflow: hidden;
+    user-select: none;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header > .container #logo{
+    padding: 1rem 0;
+}
+header > .container #logo > img {
+    height: 5rem;
+}
+
+header > .container > nav {
+    display: flex;
+    overflow: hidden;
+}
+
+header > .container > nav:nth-of-type(2) {
+    display: none;
+}
+
+header > .container > nav > a {
+    display: block;
+    color: var(--dark);
+    height: 7.5625rem;
+    padding: 2.84375rem 0.5rem;
+    transition: var(--trans-1) color;
+}
+
+header > .pop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* flex-wrap: nowrap; */
+    padding: 1.25rem;
+    padding-top: 0rem;
+    height: 14.5rem;
+}
+
+header > .container > nav > a:hover {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+header > .pop > a {
+    background-color: var(--white);
+    border: 0.0625rem solid var(--blue);
+    border-right: 0.25rem solid var(--blue);
+    border-bottom: 0.125rem solid var(--blue);
+    border-radius : 0.625rem;
+    border-top-left-radius: 7rem;
+    box-shadow: inset 0.2rem 0.1rem 0 0rem var(--input-shadow);
+    position: relative;
+    padding: 1rem; 
+    text-align: center; 
+    height: 13.5rem;
+    min-width: 12.5rem;
+    transition: border-radius var(--trans-2) ease;
+}
+
+header > .pop > a:hover {
+    border-top-left-radius: 6rem;
+}
+
+header > .pop > a:hover::before {
+    margin: 0;
+}
+
+header > .pop > a > span {
+    display: inline-block;
+    color: var(--blue);
+    font-size: 1.3rem;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 3.25rem;
+}
+
+header > .pop > a::before {
+    content: "";
+    border-top: 0.5rem solid var(--blue);
+    border-left: 0.5rem solid var(--blue);
+    border-top-left-radius : 0.3125rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    transition: margin var(--trans-1) ease;
+    z-index: -1;
+}
+
+header > .pop > .this_section {
+    width: 31rem;
+}
+
+header > .pop > .others {
+    width: 19.5rem;
+}
+
+header > .pop > div {
+    margin-right: 2rem;
+    height: 100%;
+}
+
+header > .pop > div > h3 {
+    color: var(--dark);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+header > .pop > div > hr {
+    border-color: var(--lighter-dark);
+}
+
+header > .pop > div > ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap; 
+    height: calc(100% - 3.25rem);
+}
+
+#menu .pop > div > ul {
+    padding: 0 0.5rem;
+}
+
+.pop > div > ul > *{
+    margin-top: 0.5rem;
+}
+
+.pop > div > ul > li > a {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    font-size: 0.9rem;
+    color: var(--light-dark);
+    padding-right: 1rem;
+}
+
+.pop > div > ul > li > a::before {
+    content: "";
+    border-top: 0.2rem solid var(--light);
+    border-left: 0.2rem solid var(--light);
+    position: absolute;
+    top: 0.45rem;
+    right: -0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    transform: rotate(-45deg);
+    transition-property: right, border-color;
+    transition: var(--trans-1) ease;
+}
+
+.pop > div > ul > li > a:hover {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.pop > div > ul > li > a:hover::before {
+    border-color: var(--blue);
+    right: -0.1rem;
+}
+
+header > .container > div:nth-child(5) {
+    width: 13rem;
+    height: 3rem;
+}
+
+header > .container > searchField {
+    position: absolute;
+    left: 1rem;
+    top: 2.28125rem;
+    width: 13rem;
+}
+
+searchField {
+    background-color: var(--hover);
+    display: block;
+    position: relative;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    overflow: hidden;
+    height: 3rem;
+    transition: width var(--trans-2) ease;
+}
+
+searchField > input{
+    background-color: var(--hover);
+    width: 100%;
+    height: 100%;
+    padding-right: 3rem;
+    margin: 0;
+    border: none;
+    transition: var(--trans-2) ease;
+    transition-property: width, padding-right;
+}
+
+searchField > div {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    padding: 0.25rem 0.5rem 0.5rem;
+}
+
+searchField > searchBox {
+    display: block;
+    background-color: var(--hover);
+    width: 13rem;
+    height: 0rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+
+searchField > input:focus {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: none;
+    box-shadow: none !important;
+}
+
+searchField > input:focus ~ div {
+    display: block;
+}
+
+searchField > svg{
+    position: absolute;
+    bottom: 0.8125rem;
+    right: 1rem;
+    width: 1.375rem;
+    height: 1.375rem;
+    transition: var(--trans-2) ease;
+}
+
+searchField > input:focus + svg {
+    right: 1rem !important;
+}
+
+#menu > searchField > input:focus {
+    padding-right: 1rem;
+}
+
+#menu > searchField > input:focus + svg {
+    opacity: 0%;
+    right: -1rem !important;
+}  
+
+header > .container > #menu_bar {
+    display: none;
+    flex-wrap: wrap;
+    width: 2.5rem;
+    cursor: pointer;
+    padding: 0.5625rem 0;
+    margin-left: 0.5rem;
+}
+
+header > .container > #menu_bar span {
+    display: block;
+    background-color: var(--lighter-dark);
+    height: 0.125rem;
+    width: 100%;
+    margin-bottom: 0.625rem;
+    border-radius: 999rem;
+    transition: margin-right var(--trans-1) ease;
+}
+
+header > .container > #menu_bar span:first-child { margin-right: 0.7rem; }
+header > .container > #menu_bar span:nth-child(2) { margin-right: 1.3rem; }
+header > .container > #menu_bar span:last-child { margin-bottom: 0; }
+
+header > .container > #menu_bar:hover span { 
+    background-color: var(--dark);
+    margin-right: 0; 
+}
+
+/* theme changer */
+theme_changer {
+    cursor: pointer;
+    position: relative;
+}
+
+theme_changer > div:last-child {
+    display: block;
+    position: relative;
+    box-shadow: inset 0 0 0 0.1rem var(--lighter-dark);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 999rem;
+    clip-path : ellipse(100% 100% at 50% 50%);
+    transition: var(--trans-1) ease;
+}
+
+theme_changer > div:first-child {
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    width: 1rem;
+    height: 1rem;
+    clip-path: ellipse(0% 50% at 100% 50%);
+    transform: translate(40%, -50%);
+    transition: clip-path var(--trans-1) ease;
+    z-index: 1003;
+}
+
+theme_changer > div:last-child > .light {
+    position: absolute;
+    background-color: var(--lighter-dark);
+    height: 25%;
+    width: 0.0625rem;
+    transform: translate(50%,-100%);
+}
+
+theme_changer > div:last-child > .sl {
+    height: 18%;
+}
+
+theme_changer > div:last-child > .light:nth-child(1) { top: -10%; right:50% }
+theme_changer > div:last-child > .light:nth-child(2) { top: -10%; right:-10%; transform: rotate(45deg);}
+theme_changer > div:last-child > .light:nth-child(3) { top: 37.5%; right:-32.5%; transform: rotate(90deg); }
+theme_changer > div:last-child > .light:nth-child(4) { bottom: -10%; right:-10%; transform: rotate(135deg);}
+theme_changer > div:last-child > .light:nth-child(5) { top: 37.5%; left: -32.5%; transform: rotate(90deg); }
+theme_changer > div:last-child > .light:nth-child(6) { bottom: -10%; left:-10%; transform: rotate(225deg);}
+theme_changer > div:last-child > .light:nth-child(7) { bottom: -60%; right:50% }
+theme_changer > div:last-child > .light:nth-child(8) { top: -10%; left:-10%; transform: rotate(315deg);}
+
+theme_changer:hover > div:last-child {
+    clip-path: ellipse(50% 50% at 50% 50%);
+    background-color: var(--lighter-dark);
+}
+
+theme_changer:hover > div:first-child {
+    clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+body[data-theme="dark"] theme_changer > div:last-child {
+    background-color: var(--lighter-dark);
+    clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+body[data-theme="dark"] theme_changer > div:first-child {
+    clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+body[data-theme="dark"] theme_changer:hover > div:last-child {
+    background-color: var(--white);
+    clip-path: ellipse(100% 100% at 50% 50%);
+}
+
+body[data-theme="dark"] theme_changer:hover > div:first-child {
+    clip-path: ellipse(0% 50% at 100% 50%);
+}
+/* theme changer */
+
+#menu {
+    background-color : var(--white);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 18rem;
+    padding: 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 0 0 0.5rem 0.5rem var(--shadow);
+    transition: left var(--trans-2)  ease;
+    user-select: none;
+    z-index: 2000;
+}
+
+#menu::-webkit-scrollbar {
+    display: none;
+}
+
+#menu > searchField{
+    height: fit-content;
+    margin-top: 2rem;
+}
+
+#menu > searchField > input{
+    width: 14rem;
+    height: 3rem;
+}
+
+#menu > searchField > svg{
+    height: 1.3rem;
+}
+
+#menu > a:nth-child(3) {
+    display: none;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border: 0.0625rem solid var(--light);
+    border-radius: 0.625rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+#menu > a:nth-child(3) > span {
+    transition: color var(--trans-1) ease;
+}
+
+#menu > a:nth-child(3) > linkArrow {
+    margin-left: 0.25rem;
+    border-color: var(--light);
+    transition: border-color var(--trans-1) ease;
+}
+
+#menu > a:nth-child(3) > linkArrow::before {
+    background-color: var(--light);
+    transition: background-color var(--trans-1) ease;
+}
+
+#menu > a:nth-child(3):hover > span {
+    color: var(--blue);
+}
+
+#menu > a:nth-child(3):hover > linkArrow {
+    border-color: var(--blue);
+}
+
+#menu > a:nth-child(3):hover > linkArrow::before {
+    background-color: var(--blue);
+}
+
+
+#menu > nav > div:first-child {
+    margin-top: 2rem;
+}
+
+#menu > nav > div:nth-child(7) > div:last-child > .others {
+    display: none;
+}
+
+#menu > nav > div{
+    padding-left: 0.5rem;
+    overflow: hidden;
+}
+
+#menu > nav > hr {
+    margin: 1rem 0;
+}
+
+#menu > nav > div > div:first-child {
+    cursor: pointer;
+}
+
+#menu > nav > div > div:last-child {
+    height: 0;
+    transition: height var(--trans-1) ease;
+}
+
+#menu > nav > div > div:last-child > a {
+    display: none;
+}
+
+#menu > nav > div > div:first-child > div:first-child {
+    transition: color var(--trans-1) ease;
+}
+
+#menu > nav > div > div:first-child:hover > div:first-child {
+    color: var(--blue);
+}
+
+#menu > nav > div > div:first-child > div:last-child > arrow {
+    border-color: var(--light);
+    transition-property: border-color, transform;
+    transition: var(--trans-1) ease;
+
+}
+
+#menu > nav > div > div:first-child:hover > div:last-child > arrow {
+    border-color: var(--blue);
+}
+
+#menu > h3 {
+    /* background-color: var(--gray); */
+    margin-right: -1rem;
+    padding: 0.5rem 1rem 0.5rem 0;
+    border-radius: 0.625rem;
+    margin-bottom: 0;
+}
+
+#menu > hr {
+    margin: 0.75rem 0;
+}
+
+#out_menu {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1999;
+}
+
+
+@media (max-width: 75rem){
+    topTask {
+        height: 2.65rem;
+        font-size: 0.9rem;
+        top: -2.15rem;
+    }
+
+    topTask > .container > div:last-child {
+        top: 2.65rem;
+    }
+
+    topTask .slist {
+        width: 11rem;
+    }
+
+    topTask .slist > a { 
+        height: 2.75rem;
+    }
+
+    topTask .slist > a > svg {
+        width: 2.25rem;
+        height: 2.25rem;
+        margin-right: -2.25rem;
+    }
+
+    topTask .slist > a .ibg {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    topTask .slist > a:hover .ibg {
+        width: 11rem;
+    }
+    
+    topTask .slist > a:hover svg {
+        margin-right: -10.415rem;
+    }
+
+    topTask > .container > div:nth-child(2) > theme_changer{
+        padding: 0.825rem 1rem;
+    }
+
+    topTask > .container > div:nth-child(2) > div:first-child{
+        display: none;
+    }
+
+    header > .container >  searchField {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    header > .container >  searchField > svg{
+        right: 0.8125rem;
+    }
+
+    header > .container >  searchField input {
+        width: 0;
+        padding: 0;
+    }
+
+    header > .pop > a {
+        display: none;
+    }
+
+    header > .container > div:nth-child(5) {
+        width: 3rem;
+    }
+}
+
+@media (max-width: 60rem){
+    topTask{transition: none; position: absolute; top: -5rem !important;}
+    body > div:nth-child(3) {display: none}
+    header {transition-property: height; top: 0 !important;}
+    header > .container > nav {display: none;}
+    header > .container > nav:nth-of-type(2) {
+        display: flex;
+    }
+    header > .container > #menu_bar {
+        display: flex;
+    }
+
+    header > .pop, header searchField {
+        display: none;
+    }
+
+    header > .container > div:nth-child(5) {
+        display: none;
+    }
+
+    #menu > ul:first-of-type > a:first-child, #menu > ul:first-of-type > a:nth-child(2){
+        display: none;
+    }
+}
+
+@media (min-width: 60rem){
+    #menu {
+        display: none !important;
+    }
+    #out_menu{
+        display: none !important;
+    }
+}
+
+@media (max-width: 47rem){    
+    header > .container > nav:nth-of-type(2) {
+        display: none;
+    }
+    #menu > ul:first-of-type > a:first-child, #menu > ul:first-of-type > a:nth-child(2){
+        display: flex;
+    }
+    #menu > a:nth-child(3) {
+        display: flex;
+    }
+}

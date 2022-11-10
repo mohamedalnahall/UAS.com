@@ -1,0 +1,28 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 118" width="118" height="118">
+	<title>topTaskPattern</title>
+	<style>
+		.s0 { fill: #1089ec } 
+	</style>
+	<g id="Folder 2">
+		<g id="Folder 1">
+			<path id="Shape 2" class="s0" d="m-20.3 93.2l102.6-102.5 5.6 5.6-102.5 102.6z"/>
+			<path id="Shape 2 copy" class="s0" d="m31.9-14l102.6 102.6-5.7 5.6-102.6-102.5z"/>
+		</g>
+		<g id="Folder 1 copy">
+			<path id="Shape 2" class="s0" d="m-43.3 155.2l102.6-102.5 5.6 5.6-102.5 102.6z"/>
+			<path id="Shape 2 copy" class="s0" d="m59.9 53l79.9 79.9-5.7 5.7-79.9-79.9z"/>
+		</g>
+		<g id="Folder 1 copy 2">
+			<path id="Shape 2" class="s0" d="m-43.3 195.2l102.6-102.5 5.6 5.6-102.5 102.6z"/>
+			<path id="Shape 2 copy" class="s0" d="m59.9 93l79.9 79.9-5.7 5.7-79.9-79.9z"/>
+		</g>
+		<g id="Folder 1 copy 3">
+			<path id="Shape 2" class="s0" d="m196.2 121.3l-102.5-102.6 5.6-5.6 102.6 102.5z"/>
+			<path id="Shape 2 copy" class="s0" d="m94 18.1l79.9-79.9 5.7 5.7-79.9 79.9z"/>
+		</g>
+		<g id="Folder 1 copy 4">
+			<path id="Shape 2" class="s0" d="m-77.4-83.8l102.5 102.6-5.6 5.6-102.6-102.5z"/>
+			<path id="Shape 2 copy" class="s0" d="m24.8 19.4l-79.9 79.9-5.7-5.7 79.9-79.9z"/>
+		</g>
+	</g>
+</svg>

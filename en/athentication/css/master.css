@@ -1,0 +1,81 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: var(--light-dark); 
+    margin: 0;
+    padding: 0;
+}
+
+html[dir="rtl"] * {
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color:var(--background);
+}
+
+hr{
+    color: var(--light); 
+    border-top: 1px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:var(--dark);
+}
+
+h1{
+    margin:1.3125rem 0;
+}
+
+h2{
+    margin:1.245rem 0;
+}
+
+li{
+    list-style: none;
+}
+
+input{
+    background-color: var(--white);
+    color: var(--dark);
+    border: 0.0625rem solid var(--light);
+    padding: 1rem;
+    font-size: 1rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 0.625rem;
+}
+
+input[type=text]:focus,input[type=password]:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 0.25rem var(--input-shadow);
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: var(--blue);
+    color: var(--white);
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--dark-blue);
+}
+
+input[type=submit]:focus {
+    background-color: var(--darker-blue);
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

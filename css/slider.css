@@ -1,0 +1,174 @@
+slider {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
+
+slider.main {
+    height: calc(100vh - 7.5625rem - 0.5rem);
+}
+
+slider > div:first-child{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: right var(--trans-3) ease-in-out;
+}
+
+slider > div:first-child > div  {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+slider > div:first-child > div > div {
+    background-color: var(--dark-over);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 8rem;
+}
+
+slider > div:first-child > div > div > .container{
+    display: block;
+}
+
+slider > div:first-child > div > div > .container:hover {
+    text-decoration: none;
+}
+
+slider > div:first-child > div > div > .container > div {
+    color: var(--dark);
+}
+
+slider > div:first-child > div > div > .container > div:first-child {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+slider > div:first-child > div > div > .container > hr {
+    border-color: var(--light-dark);
+}
+
+slider > div:first-child > div > div > .container > div:last-child {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+slider > div:nth-child(2), slider > div:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+}
+
+slider > div:nth-child(2) > div, slider > div:nth-child(3) > div {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform-origin: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border-top: 0.2rem solid white;
+    border-left: 0.2rem solid white;
+}
+
+slider > div:nth-child(2) {
+    background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.25));
+    right: 0;
+}
+
+slider > div:nth-child(2) > div {
+    transform: translateX(50%) translateY(-50%) rotate(135deg);
+}
+
+slider > div:nth-child(2):hover {
+    background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.75));
+
+}
+
+slider > div:nth-child(3) {
+    background-image: linear-gradient(-90deg, transparent, rgba(0, 0, 0, 0.25));
+    left: 0;
+}
+
+slider > div:nth-child(3) > div {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+slider > div:nth-child(3):hover {
+    background-image: linear-gradient(-90deg, transparent, rgba(0, 0, 0, 0.75));
+
+}
+
+slider > div:nth-child(4) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+slider > div:nth-child(4) > div {
+    background-color: var(--dark);
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 999rem;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+slider > div:nth-child(4) > div:last-child {
+    position: absolute;
+    opacity: 1;
+    transition: var(--trans-2) ease-in-out;
+    transition-property: width,right;
+    cursor: default;
+}
+
+@media (max-height: 40rem) {
+    slider.main {
+        height: 30rem;
+    }
+}
+
+@media (max-width:60rem) {
+    slider.main {
+        height: 30rem;
+    }
+
+    slider > div:nth-child(2), slider > div:nth-child(3) {
+        display: none;
+    }
+
+    slider > div:first-child > div > div > .container > div:first-child { 
+        font-size: 1.5rem;
+    }
+
+    slider > div:first-child > div > div > .container > div:last-child { 
+        font-size: 1rem;
+    }
+
+    slider > div:first-child > div > div { 
+        padding-bottom: 5rem;
+    }
+
+    /* slider > div:nth-child(4) > div {
+        width: 0.5rem;
+        height: 0.5rem;
+    } */
+}

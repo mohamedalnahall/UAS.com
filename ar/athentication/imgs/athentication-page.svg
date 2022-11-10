@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+	<title>athentication-icon-svg</title>
+	<style>
+		.s0 { fill: #0088f7 } 
+	</style>
+	<g id="athentication system">
+		<path id="Shape 1" fill-rule="evenodd" class="s0" d="m0 50c0-27.6 22.4-50 50-50h156c27.6 0 50 22.4 50 50v156c0 27.6-22.4 50-50 50h-156c-27.6 0-50-22.4-50-50zm151.8 45.4c0-14-11.4-25.4-25.4-25.4-14.1 0-25.4 11.4-25.4 25.4 0 14 11.3 25.4 25.4 25.4 14 0 25.4-11.4 25.4-25.4zm25.6 90.4v-7.8c0-19.5-15.8-35.2-35.2-35.2h-29c-19.5 0-35.2 15.7-35.2 35.2v7.8z"/>
+	</g>
+</svg>

@@ -1,0 +1,45 @@
+/* flex */
+.d-flex {
+    display: flex;
+}
+
+.hcenter {
+    display: flex;
+    align-items: center;
+}
+
+.vcenter {
+    display: flex;
+    justify-content: center;
+}
+
+.top{
+    display: flex;
+    align-items: flex-start;
+}
+
+.between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.cvcenter {
+    display: flex;
+    align-items: center;
+}
+
+.chcenter {
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-start;
+}
+/* flex */
